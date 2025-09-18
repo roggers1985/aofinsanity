@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello!</title>
+        <meta name="description" content="description" />
+        <meta name="author" content="author" />
+        <meta name="keywords" content="keywords" />
+        <link rel="stylesheet" href="./main.css" type="text/css" />
+        <script type="speculationrules">
+            {
+                "prerender": [
+                    {
+                        "where": { "href_matches": "/*" },
+                        "eagerness": "moderate"
+                    }
+                ],
+                "prefetch": [
+                    {
+                        "where": { "href_matches": "/*" },
+                        "eagerness": "moderate"
+                    }
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Aofinsanity</h1>
+
+        <section>
+            <p>Some paragraph</p>
+        </section>
+
+        <section>
+            <p>Another paragraph</p>
+        </section>
+
+        <div class="masonry-container" id="ad-container"></div>
+
+        <script type="text/javascript">
+            atOptions = {
+                key: "cdaf6e319032fc9916c96df050ff7bcf",
+                format: "iframe",
+                height: 60,
+                width: 468,
+                params: {},
+            };
+        </script>
+        <script
+            id="ad"
+            type="text/javascript"
+            src="//www.highperformanceformat.com/cdaf6e319032fc9916c96df050ff7bcf/invoke.js"
+        ></script>
+
+        <script type="text/javascript">
+            const adContainer = document.querySelector("#ad-container");
+            for (let i = 0; i < 5; i++) {
+                const box = document.createElement("div");
+                const script = document.querySelector("#ad");
+
+                box.appendChild(script.cloneNode("#ad"));
+                adContainer.appendChild(box);
+            }
+        </script>
+    </body>
+</html>
